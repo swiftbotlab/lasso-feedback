@@ -52,6 +52,8 @@ Suggestions, in order of value:
 1. Route large ranges to providers learned to accept them, or split the range and merge the results.
 2. Put the largest range Lasso would accept right now in `error.data` (e.g. `max_block_range`), so a client can chunk in one step.
 
+Both suggestions are already on your tracker: [#188](https://github.com/jaxernst/lasso-rpc/issues/188) (a range-actionable error) and [#175](https://github.com/jaxernst/lasso-rpc/issues/175) (transparent splitting). What our data adds is the hosted side: the public pool never offered `base_publicnode` as a `getLogs` candidate, and the cutoff moved within half an hour.
+
 For a log-heavy indexer this is the one blocker. Everything else here is polish.
 
 ### 2. Claim link: the button appears late, then the claim fails silently twice
